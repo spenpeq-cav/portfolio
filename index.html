@@ -9,48 +9,147 @@
     <link href="/css/tailwind.css" rel="stylesheet">
 </head>
 <body class="bg-gray-300 ">
-    <div class="bg-gray-900 lg:grid lg:grid-cols-2 2xl:grid-cols-5">
-        <div class="px-4 py-8 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-3">
-            <div class="xl:max-w-xl">
-                <img class= "mx-auto h-72 bg-red-900 rounded-full border-2 p-1 border-gray-100 shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover object-cover" src="/img/profile.jpg" alt="Spencer's profile image">
-                <h1 class="tracking-tighter text-center mt-2 text-7xl font-bold text-gray-400 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl sm:text-red-900 md:text-yellow-500 lg:text-purple-900 xl:text-green-900 2xl:text-blue-900">Spencer Pequegnat</h1>
-                <p class="mt-6 text-gray-400 font-semibold sm:mt-4 sm:text-xl">Hello, my name is Spencer and I'm a software developer and physics undergraduate from San Diego, California.</p>
+
+    <div class="bg-gray-900">
+        <div class="px-4 py-8 max-w-md mx-auto">
+            <div class="">
+                <img class= "mx-auto h-72 bg-red-900 rounded-full border-2 p-1 border-gray-100 shadow-xl object-cover" src="/img/profile.jpg" alt="Spencer's profile image">
+                <h1 class="tracking-tighter text-center mt-2 text-7xl font-bold text-gray-400">Spencer Pequegnat</h1>
+                <p class="mt-6 text-gray-400 font-semibold">Hey! My name is Spencer and I'm a software developer and physics undergraduate from San Diego, California.</p>
                 <ui class="list-none flex text-center px-10 pt-8">
-                    <li class="w-full text-gray-400 hover:text-gray-200 hover:-translate-y-1 transform transition active:text-gray-500"><a href="https://github.com/spenpeq" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
-                    <li class="w-full text-gray-400 hover:text-gray-200 hover:-translate-y-1 transform transition active:text-gray-500"><a href="https://www.linkedin.com/in/spencer-pequegnat/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
-                    <li class="w-full text-gray-400 hover:text-gray-200 hover:-translate-y-1 transform transition active:text-gray-500"><a href="mailto: spencer.peq@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a></li>
+                    <li class="social-btn"><a href="https://github.com/spenpeq" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
+                    <li class="social-btn"><a href="https://www.linkedin.com/in/spencer-pequegnat/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+                    <li class="social-btn"><a href="mailto: spencer.peq@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a></li>
                 </ui>
-                
             </div>
         </div>
     </div>
+
     <div class="bg-blue-700">
-        <div class="grid grid-cols-3 gap-2 px-6 py-12">
+        <div class="grid grid-cols-3 gap-2 px-6 py-10">
             <img class="w-36 h-36 col-span-1" src="img/placeholder.png" />
             <div class="col-span-2">
-                <h1 class="text-white text-5xl font-bold flex">Project Title</h1>
+                <h1 class="text-white text-5xl font-bold flex">National Parks</h1>
                 <p class="text-white tracking-wide py-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices magna sit amet orci mollis, sit amet commodo nisl consectetur. Pellentesque a accumsan 
                     risus. Cras et dolor placerat, malesuada mauris id, sollicitudin nisl. Nunc interdum, nisi sed egestas commodo, velit leo tincidunt.</p>
-                <a class="btn btn-live shadow-lg hover:-translate-y-0.5 transform transition" href="#">View Live</a>
+                <a class="btn btn-live" href="#">
+                    <span class="flex">
+                        <i class="fas fa-circle fa-xs absolute inline-flex animate-ping opacity-80 mt-1"></i>
+                        <i class="fas fa-circle fa-xs relative inline-flex top-1"></i>
+                        <span class="inline-flex pl-2">View Live</span>
+                    </span>
+                </a>
             </div>
         </div>
         <div class="px-4">
             <h2 class="text-white text-xl">Technologies</h2>
             <ui class="list-none flex flex-wrap py-4">
-                <li class="bg-blue-900 mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md text-sm tracking-wide shadow-2xl drop-shadow-2xl">React</li>
-                <li class="bg-blue-900 mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md text-sm tracking-wide shadow-2xl drop-shadow-2xl">React Router</li>
-                <li class="bg-blue-900 mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md text-sm tracking-wide shadow-2xl drop-shadow-2xl">JavaScript</li>
-                <li class="bg-blue-900 mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md text-sm tracking-wide shadow-2xl drop-shadow-2xl">HTML</li>
-                <li class="bg-blue-900 mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md text-sm tracking-wide shadow-2xl drop-shadow-2xl">Tailwind CSS</li>
-                <li class="bg-blue-900 mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md text-sm tracking-wide shadow-2xl drop-shadow-2xl">Tailwind CSS</li>
-                <li class="bg-blue-900 mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md text-sm tracking-wide shadow-2xl drop-shadow-2xl">Tailwind CSS</li>
+                <li class="bg-blue-900 tech-labels"><i class="fab fa-react text-blue-400"></i> React</li>
+                <li class="bg-blue-900 tech-labels"><i class="fab fa-react text-blue-400"></i> React Router</li>
+                <li class="bg-blue-900 tech-labels"><i class="fab fa-js-square text-yellow-300"></i> JavaScript</li>
+                <li class="bg-blue-900 tech-labels"><i class="fab fa-node text-green-500"></i> Node</li>
+                <li class="bg-blue-900 tech-labels"><i class="fab fa-html5 text-yellow-600"></i> HTML</li>
+                <li class="bg-blue-900 tech-labels"><i class="fas fa-wind text-blue-300"></i> Tailwind CSS</li>
+                <li class="bg-blue-900 tech-labels"><i class="fas fa-cogs"></i> NPS API</li>
+                <li class="bg-blue-900 tech-labels"><i class="fas fa-cogs"></i> Google Maps API</li>
             </ui>
         </div>
         <div class="flex flex-wrap">
-            <img class="mb-8 px-12 py-2" src="img/placeholder.png" />
-            <img class="mb-8 px-12 py-2" src="img/placeholder.png" />
-            <img class="mb-8 px-12 py-2" src="img/placeholder.png" />
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+            <a class="btn btn-live" href="#">
+                <span class="flex">
+                    <i class="fas fa-circle fa-xs absolute inline-flex animate-ping opacity-90 mt-1"></i>
+                    <i class="fas fa-circle fa-xs relative inline-flex top-1"></i>
+                    <span class="inline-flex pl-2">View Live</span>
+                </span>
+            </a>
         </div>
     </div>
+
+    <div class="bg-gray-500">
+        <div class="grid grid-cols-3 gap-2 px-6 py-10">
+            <img class="w-36 h-36 col-span-1" src="img/placeholder.png" />
+            <div class="col-span-2">
+                <h1 class="text-white text-5xl font-bold flex">Project Title</h1>
+                <p class="text-white tracking-wide py-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices magna sit amet orci mollis, sit amet commodo nisl consectetur. Pellentesque a accumsan 
+                    risus. Cras et dolor placerat, malesuada mauris id, sollicitudin nisl. Nunc interdum, nisi sed egestas commodo, velit leo tincidunt.</p>
+                <a class="btn btn-live" href="#">
+                    <span class="flex">
+                        <i class="fas fa-circle fa-xs absolute inline-flex animate-ping opacity-80 mt-1"></i>
+                        <i class="fas fa-circle fa-xs relative inline-flex top-1"></i>
+                        <span class="inline-flex pl-2">View Live</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="px-4">
+            <h2 class="text-white text-xl">Technologies</h2>
+            <ui class="list-none flex flex-wrap py-4">
+                <li class="bg-gray-700 tech-labels">React</li>
+                <li class="bg-gray-700 tech-labels">React Router</li>
+                <li class="bg-gray-700 tech-labels">JavaScript</li>
+                <li class="bg-gray-700 tech-labels">HTML</li>
+                <li class="bg-gray-700 tech-labels">Tailwind CSS</li>
+                <li class="bg-gray-700 tech-labels">Tailwind CSS</li>
+                <li class="bg-gray-700 tech-labels">Tailwind CSS</li>
+            </ui>
+        </div>
+        <div class="flex flex-wrap">
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+        </div>
+    </div>
+
+    <div class="bg-indigo-500">
+        <div class="grid grid-cols-3 gap-2 px-6 py-10">
+            <img class="w-36 h-36 col-span-1" src="img/placeholder.png" />
+            <div class="col-span-2">
+                <h1 class="text-white text-5xl font-bold flex">Project Title</h1>
+                <p class="text-white tracking-wide py-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices magna sit amet orci mollis, sit amet commodo nisl consectetur. Pellentesque a accumsan 
+                    risus. Cras et dolor placerat, malesuada mauris id, sollicitudin nisl. Nunc interdum, nisi sed egestas commodo, velit leo tincidunt.</p>
+                <a class="btn btn-live" href="#">
+                    <span class="flex">
+                        <i class="fas fa-circle fa-xs absolute inline-flex animate-ping opacity-80 mt-1"></i>
+                        <i class="fas fa-circle fa-xs relative inline-flex top-1"></i>
+                        <span class="inline-flex pl-2">View Live</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="px-4">
+            <h2 class="text-white text-xl">Technologies</h2>
+            <ui class="list-none flex flex-wrap py-4">
+                <li class="bg-indigo-700 tech-labels">React</li>
+                <li class="bg-indigo-700 tech-labels">React Router</li>
+                <li class="bg-indigo-700 tech-labels">JavaScript</li>
+                <li class="bg-indigo-700 tech-labels">HTML</li>
+                <li class="bg-indigo-700 tech-labels">Tailwind CSS</li>
+                <li class="bg-indigo-700 tech-labels">Tailwind CSS</li>
+                <li class="bg-indigo-700 tech-labels">Tailwind CSS</li>
+            </ui>
+        </div>
+        <div class="flex flex-wrap">
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
+        </div>
+    </div>
+
+    <div class="bg-gray-900">
+        <div class="px-4 py-8 max-w-md mx-auto">
+            <div class="">
+                <ui class="list-none flex text-center px-10">
+                    <li class="social-btn"><a href="https://github.com/spenpeq" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
+                    <li class="social-btn"><a href="https://www.linkedin.com/in/spencer-pequegnat/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+                    <li class="social-btn"><a href="mailto: spencer.peq@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a></li>
+                </ui>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
