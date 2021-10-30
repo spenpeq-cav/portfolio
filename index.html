@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="/css/tailwind.css" rel="stylesheet">
 </head>
-<body class="bg-gray-300 ">
 
-    <div class="bg-gray-900">
-        <div class="px-4 py-8 max-w-md mx-auto">
-            <div class="">
-                <img class= "mx-auto h-72 bg-red-900 rounded-full border-2 p-1 border-gray-100 shadow-xl object-cover" src="/img/profile.jpg" alt="Spencer's profile image">
-                <h1 class="tracking-tighter text-center mt-2 text-7xl font-bold text-gray-400">Spencer Pequegnat</h1>
-                <p class="mt-6 text-gray-400 font-semibold">Hey! My name is Spencer and I'm a software developer and physics undergraduate from San Diego, California.</p>
-                <ui class="list-none flex text-center px-10 pt-8">
-                    <li class="social-btn"><a href="https://github.com/spenpeq" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
-                    <li class="social-btn"><a href="https://www.linkedin.com/in/spencer-pequegnat/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
-                    <li class="social-btn"><a href="mailto: spencer.peq@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a></li>
-                </ui>
+<body class="bg-gray-300">
+    <div class="bg-gray-900 md:bg-indigo-900 lg:bg-yellow-200 xl:bg-yellow-600 2xl:bg-green-500">
+        <div class="px-4 py-8 max-w-md mx-auto md:grid md:grid-cols-3 md:max-w-3xl md:py-12">
+            <img class= "mx-auto h-72 bg-red-900 rounded-full border-2 p-1 border-gray-100 shadow-xl object-cover md:h-56 md:col-span-1" src="/img/profile.jpg" alt="Spencer's profile image">
+            <div class="md:col-span-2">
+                <h1 class="tracking-tighter text-center mt-2 text-7xl font-bold text-gray-400 md:mt-5">Spencer Pequegnat</h1>
+                <p class="mt-6 text-gray-400 font-semibold">Hey! My name is Spencer and I'm a software developer and physics graduate from San Diego, California.</p>
             </div>
+            <ui class="list-none flex text-center px-10 pt-8 md:col-span-3 md:mx-40">
+                <li class="social-btn"><a href="https://github.com/spenpeq" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
+                <li class="social-btn"><a href="https://www.linkedin.com/in/spencer-pequegnat/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+                <li class="social-btn"><a href="mailto: spencer.peq@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a></li>
+            </ui>
         </div>
     </div>
 
     <div class="bg-blue-700">
-        <div class="grid grid-cols-3 gap-2 px-8 py-10">
-            <img class="w-36 h-36 col-span-1" src="img/placeholder.png" />
+        <div class="grid grid-cols-3 gap-2 px-8 py-10 xl:px-36">
+            <img class="w-24 h-24 col-span-1 mx-auto md:w-36 md:h-36" src="img/placeholder.png" />
             <div class="col-span-2">
                 <h1 class="text-white text-5xl font-bold flex">National Parks</h1>
-                <p class="text-white tracking-wide py-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices magna sit amet orci mollis, sit amet commodo nisl consectetur. Pellentesque a accumsan 
-                    risus. Cras et dolor placerat, malesuada mauris id, sollicitudin nisl. Nunc interdum, nisi sed egestas commodo, velit leo tincidunt.</p>
+                <p class="text-white tracking-wide py-4 text-left">Explore America's National Parks with this informational park site. Search by state or keyword to get all park information.
+                    When you find your favorite parks, add them to your favorites. This site is made possible with the National Park Service API.
+                </p> 
                 <a class="btn btn-live" href="#">
                     <span class="flex">
                         <i class="fas fa-circle fa-xs absolute inline-flex animate-ping opacity-80 mt-1"></i>
@@ -42,7 +43,7 @@
             </div>
         </div>
         <div class="px-4">
-            <h2 class="text-white text-xl">Technologies</h2>
+            <h2 class="text-white text-2xl">Technologies</h2>
             <ui class="list-none flex flex-wrap py-4">
                 <li class="bg-blue-900 tech-labels"><i class="fab fa-react text-blue-400"></i> React</li>
                 <li class="bg-blue-900 tech-labels"><i class="fab fa-react text-blue-400"></i> React Router</li>
@@ -54,28 +55,20 @@
                 <li class="bg-blue-900 tech-labels"><i class="fas fa-cogs"></i> Google Maps API</li>
             </ui>
         </div>
-        <div class="flex flex-wrap">
-            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
-            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
-            <img class="mb-4 px-12 py-2" src="img/placeholder.png" />
-            <a class="btn btn-live" href="#">
-                <span class="flex">
-                    <i class="fas fa-circle fa-xs absolute inline-flex animate-ping opacity-90 mt-1"></i>
-                    <i class="fas fa-circle fa-xs relative inline-flex top-1"></i>
-                    <span class="inline-flex pl-2">View Live</span>
-                </span>
-            </a>
+        <div class="flex flex-wrap justify-center">
+            <img class="mb-4 px-6 py-2 md:px-12 lg:h-96 lg:w-auto lg:px-4" src="img/placeholder.png" />
+            <img class="mb-4 px-6 py-2 md:px-12 lg:h-96 lg:w-auto lg:px-4" src="img/placeholder.png" />
+            <img class="mb-4 px-6 py-2 md:px-12 lg:h-96 lg:w-auto lg:px-4" src="img/placeholder.png" />
         </div>
     </div>
 
     <div class="bg-gray-500">
-        <div class="grid grid-cols-3 gap-2 px-8 py-10">
-            <img class="w-36 h-36 col-span-1" src="img/projectlogo2.png" />
+        <div class="grid grid-cols-3 gap-2 px-8 py-10 xl:px-36">
+            <img class="w-24 h-24 col-span-1 mx-auto md:w-auto md:h-36 lg:h-48" src="img/projectlogo2.png" />
             <div class="col-span-2">
-                <h1 class="text-white text-5xl font-bold flex">EcommerceShop</h1>
-                <p class="text-white tracking-wide py-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices magna sit amet orci mollis, sit amet commodo nisl consectetur. Pellentesque a accumsan 
-                    risus. Cras et dolor placerat, malesuada mauris id, sollicitudin nisl. Nunc interdum, nisi sed egestas commodo, velit leo tincidunt.</p>
-                <a class="btn btn-live" href="#">
+                <h1 class="text-white text-4xl md:text-5xl font-semibold flex">Ecommerce Shop</h1>
+                <p class="text-white tracking-wide py-4 text-left">Ecommerce Shop is a mock product store with full functionality, including cart, view profile/orders, checkout with the PayPal API, etc.</p>
+                <a class="btn btn-live" href="https://spencer-ecommerce-shop.herokuapp.com/" target="_blank">
                     <span class="flex">
                         <i class="fas fa-circle fa-xs absolute inline-flex animate-ping opacity-80 mt-1"></i>
                         <i class="fas fa-circle fa-xs relative inline-flex top-1"></i>
@@ -99,17 +92,17 @@
                 <li class="bg-blue-900 tech-labels"><i class="fas fa-cogs"></i> JSON Web Tokens</li>
             </ui>
         </div>
-        <div class="flex flex-wrap">
-            <img class="mb-4 px-12 py-2" src="img/store1.jpg" />
-            <img class="mb-4 px-12 py-2" src="img/store2.jpg" />
-            <img class="mb-4 px-12 py-2" src="img/store4.jpg" />
-            <img class="mb-4 px-12 py-2" src="img/store5.jpg" />
+        <div class="flex flex-wrap justify-center">
+            <img class="mb-4 px-6 py-2 md:px-12 lg:h-96 lg:w-auto lg:px-4" src="img/store1.jpg" />
+            <img class="mb-4 px-6 py-2 md:px-12 lg:h-96 lg:w-auto lg:px-4" src="img/store2.jpg" />
+            <img class="mb-4 px-6 py-2 md:px-12 lg:h-96 lg:w-auto lg:px-4" src="img/store4.jpg" />
+            <img class="mb-4 px-6 py-2 md:px-12 lg:h-96 lg:w-auto lg:px-4" src="img/store5.jpg" />
         </div>
     </div>
 
     <div class="bg-indigo-500">
         <div class="grid grid-cols-3 gap-2 px-8 py-10">
-            <img class="w-36 h-36 col-span-1" src="img/placeholder.png" />
+            <img class="w-36 h-36 col-span-1 mx-auto" src="img/placeholder.png" />
             <div class="col-span-2">
                 <h1 class="text-white text-5xl font-bold flex">Project Title</h1>
                 <p class="text-white tracking-wide py-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices magna sit amet orci mollis, sit amet commodo nisl consectetur. Pellentesque a accumsan 
