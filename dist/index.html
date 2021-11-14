@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-gray-300">
-    <div class="bg-gray-900">
+    <div class="bg-gradient-to-tl from-gray-800 to-gray-900">
         <div class="px-4 py-8 max-w-md mx-auto md:grid md:grid-cols-3 md:max-w-3xl md:py-12">
             <img class= "mx-auto h-72 bg-red-900 rounded-full border-2 p-1 border-gray-100 shadow-xl object-cover md:h-56 md:col-span-1" src="/assets/profile.e2425db7.jpg" alt="Spencer's profile image">
             <div class="md:col-span-2">
@@ -26,11 +26,11 @@
         </div>
     </div>
 
-    <div class="bg-blue-700">
+    <div class="bg-gradient-to-tl from-blue-700 to-blue-500">
         <div class="grid grid-cols-3 gap-2 px-8 py-10 xl:px-36">
             <img class="w-24 h-24 col-span-1 mx-auto md:w-36 md:h-36" src="/assets/placeholder.0cd3ed7e.png" />
             <div class="col-span-2">
-                <h1 class="text-white text-5xl font-bold flex">National Parks</h1>
+                <h1 class="text-white text-gradient-to-tl from-blue-700 to-blue-500 text-5xl font-bold flex">National Parks</h1>
                 <p class="text-white tracking-wide py-4 text-left">Explore America's National Parks with this informational park site. Search by state or keyword to get all park information.
                     When you find your favorite parks, add them to your favorites. This site is made possible with the National Park Service API.
                 </p> 
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-500">
+    <div class="bg-gradient-to-tl from-gray-500 to-gray-700">
         <div class="grid grid-cols-3 gap-2 px-8 py-10 xl:px-36">
             <img class="w-24 h-24 col-span-1 mx-auto md:w-auto md:h-36 lg:h-48" src="/assets/projectlogo2.5f790847.png" />
             <div class="col-span-2">
@@ -101,7 +101,7 @@
         </div>
     </div>
 
-    <div class="bg-indigo-500">
+    <div class="bg-gradient-to-tl from-purple-500 to-purple-700">
         <div class="grid grid-cols-3 gap-2 px-8 py-10">
             <img class="w-36 h-36 col-span-1 mx-auto" src="/assets/placeholder.0cd3ed7e.png" />
             <div class="col-span-2">
@@ -136,9 +136,68 @@
         </div>
     </div>
 
-    <div class="bg-gray-900">
-        <div class="px-4 py-8 max-w-md mx-auto">
-            <div class="">
+    <footer class="bg-gradient-to-tl from-gray-800 to-gray-900">
+        <div class="px-4 py-8 max-w-xl mx-auto">
+            <div class="items-center border-4 border-red-500 rounded-md py-6 w-full bg-gray-600 md:text-center">
+                <h1 class="text-center font-semibold text-gray-200 text-5xl mb-6">Contact Me</h1>
+                <form class="w-full max-w-lg px-2" action="https://formsubmit.co/836bb4ac015cff38ad22a8a843b57cdb" method="post">
+                    <input type="hidden" name="_subject" value="New email submission!">
+                    <div class="md:flex md:items-center mb-4">
+                        <div class="md:w-1/4">
+                        <label class="block text-gray-400 font-bold md:text-right mb-1 md:mb-0 pr-4" for="email">
+                            Email
+                        </label>
+                        </div>
+                        <div class="md:w-3/4">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="email" type="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-4">
+                        <div class="md:w-1/4">
+                        <label class="block text-gray-400 font-bold md:text-right mb-1 md:mb-0 pr-4" for="full-name">
+                            Name
+                        </label>
+                        </div>
+                        <div class="md:w-3/4">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="name" type="text" name="name" required>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-4">
+                        <div class="md:w-1/4">
+                        <label class="block text-gray-400 font-bold md:text-right mb-1 md:mb-0 pr-4" for="subject">
+                            Subject
+                        </label>
+                        </div>
+                        <div class="md:w-3/4">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="subject" type="text" name="subject">
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-4">
+                        <div class="md:w-1/4">
+                        <label class="block text-gray-400 font-bold md:text-right mb-1 md:mb-0 pr-4" for="message">
+                            Message
+                        </label>
+                        </div>
+                        <div class="md:w-3/4">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500" id="message" type="text" name="message" required>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center">
+                        
+                        <div class="md:w-full">
+                        <button class="shadow bg-red-500 hover:bg-red-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+                            Send Email
+                        </button>
+                        </div>
+                    </div>
+                    </form>
+            </div>
+            
+            <div class="pt-10">
                 <ui class="list-none flex text-center px-10">
                     <li class="social-btn"><a href="https://github.com/spenpeq" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
                     <li class="social-btn"><a href="https://www.linkedin.com/in/spencer-pequegnat/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
@@ -146,7 +205,7 @@
                 </ui>
             </div>
         </div>
-    </div>
+    </footer>
 
 
 </body>
