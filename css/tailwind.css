@@ -28,7 +28,7 @@
     }
 
     .tech-labels {
-        @apply mr-4 mb-4 px-6 py-2 opacity-80 text-white rounded-md tracking-wide shadow-2xl drop-shadow-2xl text-lg
+        @apply mr-4 mb-4 px-6 py-2 opacity-90 text-white rounded-md tracking-wide shadow-2xl drop-shadow-2xl text-lg
     }
     
 }
