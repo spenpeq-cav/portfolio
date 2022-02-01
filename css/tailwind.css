@@ -22,6 +22,11 @@
         focus:ring-indigo-600 focus:ring-opacity-50 
         active:bg-indigo-400 text-indigo-100 hover:-translate-y-1 border-2 border-gray-100;
     }
+    .btn-primary4 {
+        @apply bg-lime-900 hover:bg-lime-500
+        focus:ring-lime-600 focus:ring-opacity-50 
+        active:bg-lime-400 text-lime-100 hover:-translate-y-1 border-2 border-gray-900;
+    }
     .btn-secondary {
         @apply bg-gray-300 hover:bg-gray-200
         focus:ring-gray-300 focus:ring-opacity-50 
@@ -34,7 +39,7 @@
     }
 
     .social-btn {
-        @apply w-full text-gray-400 hover:text-gray-200 hover:-translate-y-1 transform transition active:text-gray-500 duration-500 ease-in-out
+        @apply w-full text-neutral-400 hover:text-neutral-200 hover:-translate-y-1 transform transition active:text-neutral-500 duration-500 ease-in-out
     }
 
     .tech-labels {

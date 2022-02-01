@@ -1,6 +1,8 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './css/tailwind.css',
+    './index.html',
+  ],
   theme: {
     extend: {},
   },
